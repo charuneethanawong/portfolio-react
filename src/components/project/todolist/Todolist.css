@@ -1,0 +1,101 @@
+
+.title{
+    background: none;
+    font-size: 30px;
+}
+.form{
+    /* background-image: linear-gradient(90deg, rgba(24, 247, 61, 0.5) 0%, rgba(243, 247, 24, 0.5) 100%); */
+    width: 500px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+           
+}
+div .form-control{
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+.form-control{
+    display: flex;
+    justify-content: center;
+    background: none;   
+    width: 100%; 
+}
+.text-input-todo{
+    background-color: white;
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 10px 0 0 10px;    
+    color: black; 
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn-todo{
+    width: 20%;
+    border: white solid 1px;
+    border-radius: 0 10px 10px 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.btn-todo:hover{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    border: solid 1px yellow;
+    
+}
+
+.showlist{
+    background-image: linear-gradient(180deg, rgba(24, 247, 61, 0.74) 0%, rgba(243, 247, 24, 0.61) 100%);    width: 80vh;
+    margin: auto;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+}
+.showlist-container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255,0.5);
+    box-shadow: 1px 2px 5px rgb(85, 83, 83);
+
+    }
+    .title-showlist{
+        font-family: 'Work Sans', sans-serif;
+        color: black;
+        font-weight: 900;
+        background: none;
+    }
+   
+    .alert{
+        font-family: 'Work Sans', sans-serif;
+        
+    }
+   .alert.error{
+        color: red;
+   }
+   .alert.success{
+    color: green;
+   }
+   .btn-list, .btn-list-logo{
+    background: transparent;
+    border: none;
+    font-size: large;
+   }
+   
+   svg{
+    background: transparent;
+    /* font-size: large; */
+   }
