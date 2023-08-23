@@ -32,9 +32,14 @@
 
 }
 
-.question, .showscore {
+ .showscore {
     background: none;
     color: black;
+}
+.question {
+    color: white;
+    background: none;
+    font-weight: 400;
 }
 .topic{
     width: 200px;
