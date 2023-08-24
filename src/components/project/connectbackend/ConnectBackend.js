@@ -22,7 +22,7 @@ function ConnectBackend() {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:3333/adddata", formData)
+      .post("https://plain-dove-sweatshirt.cyclic.cloud/adddata", formData)
       .then((response) => {
         console.log("User data submitted:", response.data);
         setFormData({ firstName: "", lastName: "", age: "" });
@@ -33,7 +33,7 @@ function ConnectBackend() {
   };
   const handleFetchUsers = () => {
     axios
-      .get("http://localhost:3333/users")
+      .get("https://plain-dove-sweatshirt.cyclic.cloud/users")
       .then((response) => {
         setUsersData(response.data);
       })
@@ -48,7 +48,7 @@ function ConnectBackend() {
 
   const deleteUsers = (id) => {
     axios
-      .delete(`http://localhost:3333/deletedata/${id}`)
+      .delete(`https://plain-dove-sweatshirt.cyclic.cloud/deletedata/${id}`)
       .then((response) => {
         console.log("User deleted:", response.data);
         handleFetchUsers();
@@ -60,7 +60,7 @@ function ConnectBackend() {
 
   // const UpdateUser = (id,updatedUser) => {
   //   axios
-  //     .put(`http://localhost:3333/updatedata/${id}`, updatedUser)
+  //     .put(`https://plain-dove-sweatshirt.cyclic.cloud/updatedata/${id}`, updatedUser)
   //     .then((response) => {
   //       console.log("User updated:", response.data);
   //       handleFetchUsers();
